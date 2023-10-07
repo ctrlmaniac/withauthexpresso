@@ -1,2 +1,4 @@
 media/
 static/
+*.db
+*.db-journal

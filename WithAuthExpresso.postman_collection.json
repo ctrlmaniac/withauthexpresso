@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "9acccf1e-cfd2-4bc7-8343-ba7f0abe4508",
+		"name": "WithAuthExpresso",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24890120"
+	},
+	"item": [
+		{
+			"name": "Greet w/out token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/greet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"greet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Greet w/token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdhOTQzYmY1LWU2NTItNDhlNC05YzExLTJjMzFlMzA0MDE5ZSIsImVtYWlsIjoiZGF2aWRlLmRpY3Jpc2NpdG9AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmEkMTIkc2pLM2ZvU0dOR3B3MHpHSWQ5VmM4LnFuWGxEM204aGlnZXB0dnlKMkppai5WU1NKVzhXNnEiLCJpYXQiOjE2OTY3MDE3OTUsImV4cCI6MTY5Njc4ODE5NX0.blmuhqVYKNso9yVdRVelpTYCAXOs84roHj58rhIgSk0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/greet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"greet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"davide.dicriscito@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"davide.dicriscito@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

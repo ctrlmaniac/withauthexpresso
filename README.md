@@ -1,6 +1,6 @@
-# expresso
+# With Auth Expreso
 
-A template for building expressjs and vite fullstack websites
+A template for building expressjs and vite fullstack websites with builtin authentication
 
 ## Commands
 

@@ -3,9 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const bodyParser = require("body-parser");
-
-// Routes
-const helloRouter = require("./routes/hello");
+const findApi = require("./utils/findApi");
 
 // App definition
 const app = express(express.json());
@@ -23,7 +21,7 @@ app.use("/media", express.static(path.join(__dirname, "..", "media")));
 app.use(express.static(path.join(__dirname, "..", "static")));
 
 // API or client routes
-app.use("/hello", helloRouter);
+findApi(app, path.join(__dirname, "api"), "/api");
 
 // Serve index.html
 app.get("*", (req, res) => {

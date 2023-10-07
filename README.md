@@ -14,3 +14,7 @@ A template for building expressjs, vite and prisma fullstack websites with built
   - **app/static** is the directory where all the compiled code from the folder **client** will be deployed. This folder won't be committed to git.
   - **app/media** is the directory where all the uploaded files will live. This directory won't be committed to git.
 - **client** is the directory where the client will have to be developed. It is built with **vite**.
+
+## Prisma and the APP Database
+
+Just run `npx prisma migrate deploy` inside the **app/server** directory to init the database.

@@ -1,1 +1,0 @@
-move client/dist app/static

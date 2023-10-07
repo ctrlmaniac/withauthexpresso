@@ -1,3 +1,0 @@
-#!/bin/bash
-
-mv client/dist app/static

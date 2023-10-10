@@ -1,4 +1,4 @@
-# With Auth Expreso
+# With Auth Expresso
 
 A template for building expressjs and prisma applications with built-in authentication!
 
